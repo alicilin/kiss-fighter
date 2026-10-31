@@ -34,3 +34,7 @@ Oda sahibi tek yetkili simülasyonu çalıştırır. Rakip yalnızca `{left,righ
 - Phaser: https://phaser.io (MIT)
 - PeerJS: https://peerjs.com (MIT); ücretsiz sinyalleşme: https://peerjs.com/client/faq
 - Yüz görseli: kullanıcı referans fotoğrafı üzerinden ImageGen ile şeffaflaştırılmıştır.
+
+## GitHub Pages yayını
+
+Üretim çıktısı `dist/` altındadır. `gh-pages` dalı bu dizinin içeriğini yayınlar; Pages kaynağı `gh-pages` dalının köküdür. Tüm varlık yolları göreli olduğundan `/kiss-fighter/` altında çalışır. Güncellemek için değişiklikleri `main` dalına kaydet, `git subtree split --prefix dist -b pages-release`, ardından `git push origin pages-release:gh-pages` çalıştır. `dist/.nojekyll` Jekyll işlemeyi kapatır.
